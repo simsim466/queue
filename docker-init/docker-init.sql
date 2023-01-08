@@ -1,0 +1,1 @@
+CREATE SCHEMA geek_partners;

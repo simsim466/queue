@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      author: asimonov
+      id: generated_codes_table_creation
+      changes:
+        - createTable:
+            schemaName: geek_partners
+            tableName: generated_codes
+            remarks: Таблица сгенерированных кодов
+            columns:
+              - column:
+                  name: id
+                  type: SMALLINT
+                  constraints:
+                    primaryKey: true
+                  remarks: Идентификатор
+              - column:
+                  name: latest_unique_generated_code
+                  type: VARCHAR
+                  remarks: Последнее (крайнее) значение сгенерированного уникального кода

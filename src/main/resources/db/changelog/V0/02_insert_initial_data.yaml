@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert_a0a0
+      author: asimonov
+      changes:
+        - insert:
+            schemaName: geek_partners
+            tableName: generated_codes
+            columns:
+              - column:
+                  name: id
+                  valueNumeric: '-1'
+              - column:
+                  name: latest_unique_generated_code
+                  value: "a0a0"
