@@ -46,4 +46,12 @@ class QueueApplicationTests {
         );
     }
 
+    @Test
+    void each_rank_last_value_is_over_for_random_length_code() {
+        Assertions.assertEquals(
+                "a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0",
+                nextValueGenerator.perform("z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9z9")
+        );
+    }
+
 }

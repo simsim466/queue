@@ -21,7 +21,7 @@ public class CompositeNumber {
     private final BigInteger wholePart;
 
     /**
-     * остаток от деления сохраняемого числа на основание системы счисления
+     * остаток от деления сохраняемого числа на основание системы счисления; не может быть равным нулю
      */
     final int remainder;
 
